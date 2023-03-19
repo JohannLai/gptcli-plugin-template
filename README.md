@@ -1,8 +1,8 @@
-# Template repository for gptcli plugin
+# 🛠️ Template repository for gptcli plugin
 
 This is a template repository for building a gptcli plugin.
 
-## Usage
+## 🤖 How to use ?
 
 Just write your plugin in the `yml` file and run it with `gptcli`.
 
@@ -14,7 +14,8 @@ And I can test it with `gptcli`:
 gptcli joke.yml
 ```
 
-## Install
+## 📦 Install
+
 when you finish your plugin, you can install it with `gptcli`, with your github username and repository name.
 
 ```bash
@@ -29,12 +30,10 @@ if you don't want to publish your plugin, you can install it with local file.
 mv joke.yml ~/.config/gptcli/plugins/joke/joke.yml
 ```
 
-## Development
-
-### grammar
+## 📃 Documentation
 
 
-## License
+## 📃 License
 
 [MIT](LICENSE)
 
