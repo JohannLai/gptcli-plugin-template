@@ -1,0 +1,25 @@
+name: joke
+description: "joke plugin for gpt cli"
+repository: "johannlai/joke"
+author: "johannlai"
+help: |
+  joke plugin for gpt cli
+
+  Usage:
+    ❯ gpt joke
+    ❯ "Why did the tomato turn red? Because it saw the salad dressing!"
+
+env:
+  LANG: "en"
+steps:
+  - name: "ask ai to output joke"
+    uses: "gpt:createChatCompletion"
+    with:
+      messages:
+        - role: "user"
+          content: "tell me a joke"
+    export:
+      response_content: JOKE
+  - name: "output response"
+    script: |
+      echo $JOKE
