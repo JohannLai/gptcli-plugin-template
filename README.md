@@ -110,10 +110,8 @@ run a shell script
 ```yml
 steps:
   - name: Step Name
-    uses: script
-    with:
-      script: |
-        echo "Hello World"
+    script: |
+       echo "Hello World"
 ```
 
 **output key:**
